@@ -32,14 +32,12 @@ import com.hoffrogge.lehreinheit04.Quadrat;
  */
 public class Zeichenflaeche extends Quadrat {
 
-    @Override
-    public void zeichnen(Graphics graphics) {
-        super.zeichnen(graphics);
+	@Override
+	public void zeichnen(Graphics graphics) {
+		super.zeichnen(graphics);
 
-        /*
-         * Draws a line, using the current color, between the points (x1, y1)
-         * and (x2, y2) in this graphics context's coordinate system.
-         */
-//        graphics.drawLine(x1, y1, x2, y2);
-    }
+		Rechteck rechteck1 = new Rechteck(0, 0);
+		rechteck1.zeichnen(graphics);
+
+	}
 }
