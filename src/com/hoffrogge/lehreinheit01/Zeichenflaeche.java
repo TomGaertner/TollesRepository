@@ -36,8 +36,9 @@ public class Zeichenflaeche extends Quadrat {
 	public void zeichnen(Graphics graphics) {
 		super.zeichnen(graphics);
 
-		Rechteck rechteck1 = new Rechteck(0, 0);
-		rechteck1.zeichnen(graphics);
+		Tetrominoquadrat tetrominoquadrat = new Tetrominoquadrat(0, 0);
+		tetrominoquadrat.zeichnen(graphics);
 
 	}
+
 }
