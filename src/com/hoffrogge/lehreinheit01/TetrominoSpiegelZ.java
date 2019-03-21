@@ -52,7 +52,7 @@ public class TetrominoSpiegelZ implements GeometrischeFigur {
 
 	@Override
 	public Farbe getLinienFarbe() {
-		this.Farbe = farbe;
+		this.farbe = farbe;
 		return null;
 	}
 
