@@ -15,10 +15,10 @@ public class Rechteck {
 
 	public void zeichnen(Graphics graphics) {
 
-		graphics.drawLine(xKooridnate, yKoordinate, xKooridnate + 100, yKoordinate);
-		graphics.drawLine(xKooridnate, yKoordinate, xKooridnate, yKoordinate + 100);
-		graphics.drawLine(xKooridnate + 100, yKoordinate, xKooridnate + 100, yKoordinate + 100);
-		graphics.drawLine(xKooridnate, yKoordinate + 100, xKooridnate + 100, yKoordinate + 100);
+		graphics.drawLine(xKooridnate, yKoordinate, xKooridnate + 30, yKoordinate);
+		graphics.drawLine(xKooridnate, yKoordinate, xKooridnate, yKoordinate + 30);
+		graphics.drawLine(xKooridnate + 30, yKoordinate, xKooridnate + 30, yKoordinate + 30);
+		graphics.drawLine(xKooridnate, yKoordinate + 30, xKooridnate + 30, yKoordinate + 30);
 	}
 }
 /*

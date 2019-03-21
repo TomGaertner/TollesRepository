@@ -6,12 +6,14 @@ import com.hoffrogge.lehreinheit03.Farbe;
 import com.hoffrogge.lehreinheit04.GeometrischeFigur;
 import com.hoffrogge.lehreinheit04.Punkt;
 
-public class Tetrominoquadrat implements GeometrischeFigur {
+public class TetrominoSpiegelZ implements GeometrischeFigur {
+
 	private int xKoordinate;
 	private int yKoordinate;
+	private Punkt mittelPunkt;
+	private Farbe farbe;
 
-	public Tetrominoquadrat(int xKoordinate, int yKoordinate) {
-
+	public TetrominoSpiegelZ(int xKoordinate, int yKoordinate) {
 		super();
 		this.xKoordinate = xKoordinate;
 		this.yKoordinate = yKoordinate;
@@ -19,35 +21,27 @@ public class Tetrominoquadrat implements GeometrischeFigur {
 
 	public void zeichnen(Graphics graphics) {
 
-		Rechteck rechteck = new Rechteck(xKoordinate, yKoordinate);
+		Rechteck rechteck = new Rechteck(xKoordinate + 30, yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 30, yKoordinate);
+		rechteck = new Rechteck(xKoordinate + 30, yKoordinate + 30);
 		rechteck.zeichnen(graphics);
 
 		rechteck = new Rechteck(xKoordinate, yKoordinate + 30);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 30, yKoordinate + 30);
+		rechteck = new Rechteck(xKoordinate, yKoordinate + 60);
 		rechteck.zeichnen(graphics);
-		// graphics.drawLine(xKoordinate, yKoordinate, xKoordinate + 100, yKoordinate);
-		// graphics.drawLine(xKoordinate, yKoordinate, xKoordinate, yKoordinate + 100);
-		// graphics.drawLine(xKoordinate + 100, yKoordinate, xKoordinate + 100,
-		// yKoordinate + 100);
-		// graphics.drawLine(xKoordinate, yKoordinate + 100, xKoordinate + 100,
-		// yKoordinate + 100);
 	}
 
 	@Override
 	public void setMittelpunkt(Punkt mittelpunkt) {
-		// TODO Auto-generated method stub
-
+		this.mittelPunkt = mittelpunkt;
 	}
 
 	@Override
 	public Punkt getMittelPunkt() {
-		// TODO Auto-generated method stub
-		return null;
+		return mittelPunkt;
 	}
 
 	@Override
@@ -58,7 +52,7 @@ public class Tetrominoquadrat implements GeometrischeFigur {
 
 	@Override
 	public Farbe getLinienFarbe() {
-		// TODO Auto-generated method stub
+		this.Farbe = farbe;
 		return null;
 	}
 

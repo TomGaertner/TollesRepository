@@ -6,15 +6,17 @@ import com.hoffrogge.lehreinheit03.Farbe;
 
 public interface GeometrischeFigur {
 
-    void setMittelpunkt(Punkt mittelpunkt);
+	void setMittelpunkt(Punkt mittelpunkt);
 
-    Punkt getMittelPunkt();
+	Punkt getMittelPunkt();
 
-    void setDurchmesser(int d);
+	void setDurchmesser(int d);
 
-    Farbe getLinienFarbe();
+	Farbe getLinienFarbe();
 
-    void setLinienFarbe(Farbe farbe);
+	void setLinienFarbe(Farbe farbe);
 
-    void zeichnen(Graphics graphics);
+	void zeichnen(Graphics graphics);
+
+	Farbe getLinienFarbe(Farbe Farbe);
 }

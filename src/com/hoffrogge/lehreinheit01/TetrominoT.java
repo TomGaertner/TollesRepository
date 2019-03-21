@@ -6,11 +6,12 @@ import com.hoffrogge.lehreinheit03.Farbe;
 import com.hoffrogge.lehreinheit04.GeometrischeFigur;
 import com.hoffrogge.lehreinheit04.Punkt;
 
-public class Tetrominoquadrat implements GeometrischeFigur {
+public class TetrominoT implements GeometrischeFigur {
+
 	private int xKoordinate;
 	private int yKoordinate;
 
-	public Tetrominoquadrat(int xKoordinate, int yKoordinate) {
+	public TetrominoT(int xKoordinate, int yKoordinate) {
 
 		super();
 		this.xKoordinate = xKoordinate;
@@ -25,17 +26,11 @@ public class Tetrominoquadrat implements GeometrischeFigur {
 		rechteck = new Rechteck(xKoordinate + 30, yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate, yKoordinate + 30);
+		rechteck = new Rechteck(xKoordinate + 60, yKoordinate);
 		rechteck.zeichnen(graphics);
 
 		rechteck = new Rechteck(xKoordinate + 30, yKoordinate + 30);
 		rechteck.zeichnen(graphics);
-		// graphics.drawLine(xKoordinate, yKoordinate, xKoordinate + 100, yKoordinate);
-		// graphics.drawLine(xKoordinate, yKoordinate, xKoordinate, yKoordinate + 100);
-		// graphics.drawLine(xKoordinate + 100, yKoordinate, xKoordinate + 100,
-		// yKoordinate + 100);
-		// graphics.drawLine(xKoordinate, yKoordinate + 100, xKoordinate + 100,
-		// yKoordinate + 100);
 	}
 
 	@Override

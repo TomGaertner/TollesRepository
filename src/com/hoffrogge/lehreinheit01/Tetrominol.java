@@ -2,7 +2,9 @@ package com.hoffrogge.lehreinheit01;
 
 import java.awt.Graphics;
 
-public class Tetrominol {
+import com.hoffrogge.lehreinheit04.GeometrischeFigur;
+
+public class Tetrominol implements GeometrischeFigur {
 
 	private int xKoordinate;
 	private int yKoordinate;
@@ -19,13 +21,13 @@ public class Tetrominol {
 		Rechteck rechteck = new Rechteck(xKoordinate, yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 100, yKoordinate);
+		rechteck = new Rechteck(xKoordinate + 30, yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 200, yKoordinate);
+		rechteck = new Rechteck(xKoordinate + 60, yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 300, yKoordinate);
+		rechteck = new Rechteck(xKoordinate + 90, yKoordinate);
 		rechteck.zeichnen(graphics);
 	}
 }
