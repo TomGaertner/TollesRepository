@@ -14,13 +14,13 @@ public class TetrominoT extends AllgemeinerTetromino {
 		Rechteck rechteck = new Rechteck(xKoordinate, yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 30, yKoordinate);
+		rechteck = new Rechteck(xKoordinate + Rechteck.getKantenlaenge(), yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 60, yKoordinate);
+		rechteck = new Rechteck(xKoordinate + 2 * Rechteck.getKantenlaenge(), yKoordinate);
 		rechteck.zeichnen(graphics);
 
-		rechteck = new Rechteck(xKoordinate + 30, yKoordinate + 30);
+		rechteck = new Rechteck(xKoordinate + Rechteck.getKantenlaenge(), yKoordinate + rechteck.getKantenlaenge());
 		rechteck.zeichnen(graphics);
 	}
 

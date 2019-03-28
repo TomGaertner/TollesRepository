@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import com.hoffrogge.lehreinheit04.GeometrischeFigur;
 import com.hoffrogge.lehreinheit04.Quadrat;
 import com.hoffrogge.tetris.TetrominoBlock;
+import com.hoffrogge.tetris.TetrominoL;
 import com.hoffrogge.tetris.TetrominoLanger;
 import com.hoffrogge.tetris.TetrominoUmgedrehtesL;
 import com.hoffrogge.tetris.TetrominoUmgedrehtesZ;
@@ -61,25 +62,25 @@ public class Zeichenflaeche extends Quadrat implements GeometrischeFigur {
 		//
 		// TetrominoT tetrominoT = new TetrominoT(500, 0);
 		// tetrominoT.zeichnen(graphics);
-		
-		TetrominoBlock tetrominoBlock = new TetrominoBlock(200, 150);
+
+		TetrominoBlock tetrominoBlock = new TetrominoBlock(0, 0);
 		tetrominoBlock.zeichnen(graphics);
-		
-		Tetrominol tetrominoL = new TetrominoL(200, 400);
+
+		TetrominoL tetrominoL = new TetrominoL(300, 0);
 		tetrominoL.zeichnen(graphics);
-		
-		TetrominoLanger tetrominoLanger = TetrominoLanger(0, 300);
+
+		TetrominoLanger tetrominoLanger = new TetrominoLanger(0, 300);
 		tetrominoLanger.zeichnen(graphics);
-		
+
 		TetrominoT tetrominoT = new TetrominoT(500, 0);
 		tetrominoT.zeichnen(graphics);
-		
-		TetrominoUmgedrehtesZ tetrominoUmgedrehtesZ = new TetrominoUmgedrehtesZ(0, 0);
+
+		TetrominoUmgedrehtesZ tetrominoUmgedrehtesZ = new TetrominoUmgedrehtesZ(700, 500);
 		tetrominoUmgedrehtesZ.zeichnen(graphics);
-		
-		TetrominoUmgedrehtesL tetrominoUmgedrehtesL = new TetrominoUmgedrehtesL(300, 0)
+
+		TetrominoUmgedrehtesL tetrominoUmgedrehtesL = new TetrominoUmgedrehtesL(400, 200);
 		tetrominoUmgedrehtesL.zeichnen(graphics);
-		
+
 		TetrominoZ tetrominoZ = new TetrominoZ(100, 100);
 		tetrominoZ.zeichnen(graphics);
 	}

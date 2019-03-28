@@ -8,6 +8,10 @@ import com.hoffrogge.lehreinheit04.Punkt;
 //in diese Klasse können Methoden rein, die bei allen Tetrominos identisch sind, dann muss nicht jede Klasse sie implementieren
 public abstract class AllgemeinerTetromino implements TetrominoSpielstein {
 
+	// public void tetrominoBlock() {
+	// TetrominoBlock block = new TetrominoBlock(10, 10);
+	// block.zeichnen(graphics);
+
 	@Override
 	public int getHoechstesY() {
 		// TODO Auto-generated method stub

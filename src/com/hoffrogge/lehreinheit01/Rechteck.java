@@ -7,10 +7,16 @@ public class Rechteck {
 	private int xKooridnate;
 	private int yKoordinate;
 
+	private static int kantenlaenge = 30;
+
 	public Rechteck(int xKooridnate, int yKoordinate) {
 		super();
 		this.xKooridnate = xKooridnate;
 		this.yKoordinate = yKoordinate;
+	}
+
+	public static int getKantenlaenge() {
+		return kantenlaenge;
 	}
 
 	public void zeichnen(Graphics graphics) {
